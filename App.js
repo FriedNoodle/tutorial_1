@@ -1,19 +1,6 @@
 import React , { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import firebase from 'firebase';
-
-
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyCNtj_iVFD3SjkfSa7Qxeno_VIUJGhC9cI",
-    authDomain: "tutorial-1-ed14c.firebaseapp.com",
-    databaseURL: "https://tutorial-1-ed14c.firebaseio.com",
-    projectId: "tutorial-1-ed14c",
-    storageBucket: "tutorial-1-ed14c.appspot.com",
-    messagingSenderId: "808165682831"
-  };
-  firebase.initializeApp(config);
-
+import firebase from 'firebase'
 
 export default class App extends React.Component {
   componentWillMount(){
@@ -39,8 +26,7 @@ export default class App extends React.Component {
       firebase.database().ref('users').once('value', (data)=>{
       console.log(data.toJSON());
       })
-     
-   }
+    }
   render() {
     return (
       <View style={styles.container}>
@@ -51,8 +37,6 @@ export default class App extends React.Component {
     );
   }
 }
-
-
 
 const styles = StyleSheet.create({
   container: {
