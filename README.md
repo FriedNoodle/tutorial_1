@@ -28,7 +28,7 @@ Below you'll find information about performing common tasks. The most recent ver
 
 ## Updating to New Releases
 
-![alt text](https://github.com/FriedNoodle/tutorial_1/tree/master/images/coolyori.jpg)
+![Project Schedule](images/coolyori.jpg)
 
 You should only need to update the global installation of `create-react-native-app` very rarely, ideally never.
 
